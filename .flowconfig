@@ -29,6 +29,7 @@ node_modules/warning/.*
 ; https://github.com/facebook/flow/issues/5568
 ./node_modules/react-native/Libraries/Lists/SectionList.js
 ./node_modules/react-native/Libraries/Lists/VirtualizedSectionList.js
+./html/
 
 [include]
 

@@ -3,14 +3,14 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "start": "react-native start android",
+    "start": "react-native run-android",
     "test": "jest",
     "flow": "flow"
   },
   "dependencies": {
     "react": "16.8.6",
     "react-native": "0.60.4",
-    "react-native-webview": "^5.12.1"
+    "react-native-webview": "^6.0.3"
   },
   "devDependencies": {
     "@babel/cli": "^7.5.5",
