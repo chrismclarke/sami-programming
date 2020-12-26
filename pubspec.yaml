@@ -1,105 +1,52 @@
 name: sami_programming
 description: A new Flutter project.
-
-# The following defines the version and build number for your application.
-# A version number is three numbers separated by dots, like 1.2.43
-# followed by an optional build number separated by a +.
-# Both the version and the builder number may be overridden in flutter
-# build by specifying --build-name and --build-number, respectively.
-# In Android, build-name is used as versionName while build-number used as versionCode.
-# Read more about Android versioning at https://developer.android.com/studio/publish/versioning
-# In iOS, build-name is used as CFBundleShortVersionString while build-number used as CFBundleVersion.
-# Read more about iOS versioning at
-# https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
 version: 1.0.0+1
-
 environment:
-  sdk: ">=2.1.0 <3.0.0"
-
+  sdk: '>=2.1.0 <3.0.0'
 dependencies:
-  # Link to PR version as not currently merged
-  # https://github.com/flutter/plugins/pull/1247
-  #webview_flutter:
-  #  git:
-  #    url: git://github.com/shaqian/plugins.git
-  #    path: packages/webview_flutter
-  webview_flutter:
+  webview_flutter: null
   flutter:
     sdk: flutter
-
-  # The following adds the Cupertino Icons font to your application.
-  # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^0.1.2
-
 dev_dependencies:
   flutter_test:
     sdk: flutter
-
-# For information on the generic Dart part of this file, see the
-# following page: https://dart.dev/tools/pub/pubspec
-
-# The following section is specific to Flutter.
 flutter:
-  # The following line ensures that the Material Icons font is
-  # included with your application, so that you can use the icons in
-  # the material Icons class.
   uses-material-design: true
-
-  # To add assets to your application, add an assets section, like this:
-  # assets:
-  #  - images/a_dot_burr.jpeg
-  #  - images/a_dot_ham.jpeg
   assets:
-    [
-      "assets/blockly-games",
-      "assets/blockly-games/en",
-      "assets/blockly-games/en/bird",
-      "assets/blockly-games/en/bird/generated",
-      "assets/blockly-games/en/bird/generated/en",
-      "assets/blockly-games/en/common",
-      "assets/blockly-games/en/index",
-      "assets/blockly-games/en/index/generated",
-      "assets/blockly-games/en/index/generated/en",
-      "assets/blockly-games/en/maze",
-      "assets/blockly-games/en/maze/generated",
-      "assets/blockly-games/en/maze/generated/en",
-      "assets/blockly-games/en/movie",
-      "assets/blockly-games/en/movie/generated",
-      "assets/blockly-games/en/movie/generated/en",
-      "assets/blockly-games/en/music",
-      "assets/blockly-games/en/music/generated",
-      "assets/blockly-games/en/music/generated/en",
-      "assets/blockly-games/en/pond",
-      "assets/blockly-games/en/pond/docs",
-      "assets/blockly-games/en/pond/docs/generated",
-      "assets/blockly-games/en/pond/docs/generated/en",
-      "assets/blockly-games/en/pond/duck",
-      "assets/blockly-games/en/pond/duck/generated",
-      "assets/blockly-games/en/pond/duck/generated/en",
-      "assets/blockly-games/en/pond/generated",
-      "assets/blockly-games/en/pond/generated/en",
-      "assets/blockly-games/en/pond/tutor",
-      "assets/blockly-games/en/pond/tutor/generated",
-      "assets/blockly-games/en/pond/tutor/generated/en",
-      "assets/blockly-games/en/puzzle",
-      "assets/blockly-games/en/puzzle/generated",
-      "assets/blockly-games/en/puzzle/generated/en",
-      "assets/blockly-games/en/third-party",
-      "assets/blockly-games/en/third-party/ace",
-      "assets/blockly-games/en/third-party/blockly",
-      "assets/blockly-games/en/third-party/blockly/media",
-      "assets/blockly-games/en/third-party/JS-Interpreter",
-      "assets/blockly-games/en/third-party/soundfonts",
-      "assets/blockly-games/en/third-party/soundfonts/banjo",
-      "assets/blockly-games/en/third-party/soundfonts/choir",
-      "assets/blockly-games/en/third-party/soundfonts/drum",
-      "assets/blockly-games/en/third-party/soundfonts/flute",
-      "assets/blockly-games/en/third-party/soundfonts/guitar",
-      "assets/blockly-games/en/third-party/soundfonts/piano",
-      "assets/blockly-games/en/third-party/soundfonts/trumpet",
-      "assets/blockly-games/en/third-party/soundfonts/violin",
-      "assets/blockly-games/en/third-party/SoundJS",
-      "assets/blockly-games/en/turtle",
-      "assets/blockly-games/en/turtle/generated",
-      "assets/blockly-games/en/turtle/generated/en",
-    ]
+    - assets/blockly-games/
+    - assets/blockly-games/en/
+    - assets/blockly-games/en/bird/
+    - assets/blockly-games/en/bird/generated/en/
+    - assets/blockly-games/en/common/
+    - assets/blockly-games/en/index/
+    - assets/blockly-games/en/index/generated/en/
+    - assets/blockly-games/en/maze/
+    - assets/blockly-games/en/maze/generated/en/
+    - assets/blockly-games/en/movie/
+    - assets/blockly-games/en/movie/generated/en/
+    - assets/blockly-games/en/music/
+    - assets/blockly-games/en/music/generated/en/
+    - assets/blockly-games/en/pond/
+    - assets/blockly-games/en/pond/docs/
+    - assets/blockly-games/en/pond/docs/generated/en/
+    - assets/blockly-games/en/pond/duck/
+    - assets/blockly-games/en/pond/duck/generated/en/
+    - assets/blockly-games/en/pond/tutor/
+    - assets/blockly-games/en/pond/tutor/generated/en/
+    - assets/blockly-games/en/puzzle/
+    - assets/blockly-games/en/puzzle/generated/en/
+    - assets/blockly-games/en/third-party/ace/
+    - assets/blockly-games/en/third-party/blockly/media/
+    - assets/blockly-games/en/third-party/JS-Interpreter/
+    - assets/blockly-games/en/third-party/soundfonts/banjo/
+    - assets/blockly-games/en/third-party/soundfonts/choir/
+    - assets/blockly-games/en/third-party/soundfonts/drum/
+    - assets/blockly-games/en/third-party/soundfonts/flute/
+    - assets/blockly-games/en/third-party/soundfonts/guitar/
+    - assets/blockly-games/en/third-party/soundfonts/piano/
+    - assets/blockly-games/en/third-party/soundfonts/trumpet/
+    - assets/blockly-games/en/third-party/soundfonts/violin/
+    - assets/blockly-games/en/third-party/SoundJS/
+    - assets/blockly-games/en/turtle/
+    - assets/blockly-games/en/turtle/generated/en/
