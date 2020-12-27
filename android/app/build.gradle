@@ -20,6 +20,8 @@ def flutterVersionName = localProperties.getProperty('flutter.versionName')
 if (flutterVersionName == null) {
     flutterVersionName = '1.0'
 }
+logger.lifecycle("version code {}", flutterVersionCode)
+logger.lifecycle("flutterVersionName {}", flutterVersionName)
 
 apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
