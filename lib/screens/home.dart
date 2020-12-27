@@ -22,25 +22,6 @@ class Home extends StatelessWidget {
           },
         );
       }),
-      // floatingActionButton: favoriteButton(),
     );
-  }
-
-  Widget favoriteButton() {
-    return FutureBuilder<WebViewController>(
-        future: _controller.future,
-        builder: (BuildContext context,
-            AsyncSnapshot<WebViewController> controller) {
-          if (controller.hasData) {
-            return FloatingActionButton(
-              onPressed: () async {
-                controller.data.evaluateJavascript(
-                    "cube.material.color.setHex('0x' + Math.floor(Math.random() * 16777215).toString(16));");
-              },
-              child: const Icon(Icons.refresh),
-            );
-          }
-          return Container();
-        });
   }
 }
