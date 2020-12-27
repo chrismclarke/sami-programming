@@ -10,10 +10,13 @@ This is a flutter wrapper around [Blockly Games](https://blockly-games.appspot.c
 ## Setup
 
 - Clone Repo
+
 ```
 git clone --depth 1 https://github.com/supportingami/sami-programming
 ```
+
 - Install dependencies
+
 ```
 yarn install
 ```
@@ -30,6 +33,21 @@ yarn install
 npm run build
 ```
 
-
 ## Running on device
+
 Using android studio run the debug build, or create a signed release for the play store
+
+## Versioning
+
+Versioning should be handled by updating the pubspec.yaml file
+```
+version: 1.0.2+2
+```
+Where version name is given by 3-digit number, and build number by what follows `+`
+
+If this does not work, manually add to `android/local.properties`
+
+```
+flutter.versionName=1.0.2
+flutter.versionCode=2
+```
