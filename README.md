@@ -29,3 +29,7 @@ yarn install
 ```
 npm run build
 ```
+
+
+## Running on device
+Using android studio run the debug build, or create a signed release for the play store
