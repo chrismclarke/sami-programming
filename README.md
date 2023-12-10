@@ -4,8 +4,6 @@ This is a flutter wrapper around [Blockly Games](https://blockly-games.appspot.c
 
 ## Prerequisites
 
-- Node
-- [Yarn](https://yarnpkg.com/getting-started/install)
 - [Flutter](https://docs.flutter.dev/get-started/install)
 - [Dart](https://dart.dev/get-dart
 
@@ -28,11 +26,20 @@ git clone --depth 1 https://github.com/supportingami/sami-programming
 
 - Install dependencies
 
-```
+```sh
 yarn install
 ```
 
+```sh
+flutter run
+```
+
 ## Creating a new build (for any language)
+
+### Prerequisites
+
+- Node
+- [Yarn](https://yarnpkg.com/getting-started/install)
 
 1. Download the required assets from https://github.com/google/blockly-games/wiki/Offline
 
@@ -40,8 +47,12 @@ yarn install
 
 3. Generate files list
 
+```sh
+yarn install
 ```
-npm run build
+
+```sh
+node scripts/generateAssetList.js
 ```
 
 ## Running on device
