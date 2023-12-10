@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
-import 'screens/home.dart';
 import 'package:flutter/services.dart';
+import 'screens/home.dart';
 
-class App extends StatelessWidget {
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
+  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     // set orientation and remove status bar
@@ -10,13 +13,11 @@ class App extends StatelessWidget {
         [DeviceOrientation.landscapeLeft, DeviceOrientation.landscapeRight]);
     SystemChrome.setEnabledSystemUIMode(SystemUiMode.manual, overlays: []);
     return MaterialApp(
-      title: 'Flutter Web Views',
+      title: 'Sami Programming',
       theme: ThemeData(
-          primarySwatch: Colors.blue,
-          fontFamily: "Arial",
-          textTheme: TextTheme(
-              labelLarge: TextStyle(color: Colors.white, fontSize: 18.0),
-              titleLarge: TextStyle(color: Colors.red))),
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.blue),
+        useMaterial3: true,
+      ),
       home: Home(),
     );
   }
