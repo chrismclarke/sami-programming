@@ -43,3 +43,10 @@ app.*.map.json
 /android/app/release
 
 node_modules
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
