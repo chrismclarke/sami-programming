@@ -8,15 +8,15 @@ class App extends StatelessWidget {
     // set orientation and remove status bar
     SystemChrome.setPreferredOrientations(
         [DeviceOrientation.landscapeLeft, DeviceOrientation.landscapeRight]);
-    SystemChrome.setEnabledSystemUIOverlays([]);
+    SystemChrome.setEnabledSystemUIMode(SystemUiMode.manual, overlays: []);
     return MaterialApp(
       title: 'Flutter Web Views',
       theme: ThemeData(
           primarySwatch: Colors.blue,
           fontFamily: "Arial",
           textTheme: TextTheme(
-              button: TextStyle(color: Colors.white, fontSize: 18.0),
-              title: TextStyle(color: Colors.red))),
+              labelLarge: TextStyle(color: Colors.white, fontSize: 18.0),
+              titleLarge: TextStyle(color: Colors.red))),
       home: Home(),
     );
   }

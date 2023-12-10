@@ -5,7 +5,18 @@ This is a flutter wrapper around [Blockly Games](https://blockly-games.appspot.c
 ## Prerequisites
 
 - Node
-- Yarn
+- [Yarn](https://yarnpkg.com/getting-started/install)
+- [Flutter](https://docs.flutter.dev/get-started/install)
+- [Dart](https://dart.dev/get-dart
+
+**Android Development**
+Follow docs at:
+https://docs.flutter.dev/get-started/install/windows#install-android-studio
+
+If Android Studio already installed then setup wizard will not run, and instead should manually install required components from sdk manager (e.g. Android SDK, Android SDK Command-line Tools, Android SDK Build-Tools)
+
+May also want to install flutter plugin from `File -> Settings -> Plugins`
+https://plugins.jetbrains.com/plugin/9212-flutter
 
 ## Setup
 
@@ -40,9 +51,11 @@ Using android studio run the debug build, or create a signed release for the pla
 ## Versioning
 
 Versioning should be handled by updating the pubspec.yaml file
+
 ```
 version: 1.0.2+2
 ```
+
 Where version name is given by 3-digit number, and build number by what follows `+`
 
 If this does not work, manually add to `android/local.properties`
