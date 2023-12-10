@@ -59,6 +59,9 @@ node scripts/generateAssetList.js
 
 Using android studio run the debug build, or create a signed release for the play store
 
+NOTE - for running the app you can open android studio on main folder
+If trying to edit gradle build or image assets easier to open within child `android` folder
+
 ## Versioning
 
 Versioning should be handled by updating the pubspec.yaml file
