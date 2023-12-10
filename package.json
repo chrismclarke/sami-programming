@@ -6,9 +6,9 @@
   "directories": {
     "lib": "lib"
   },
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "ts-node scripts/generateAssetList.ts"
+    "generate:assets": "node scripts/generateAssetList.js"
   },
   "repository": {
     "type": "git",
@@ -21,11 +21,7 @@
   },
   "homepage": "https://github.com/supportingami/sami-programming#readme",
   "devDependencies": {
-    "@types/fs-extra": "^9.0.6",
-    "@types/js-yaml": "^3.12.5",
-    "fs-extra": "^9.0.1",
-    "js-yaml": "^3.14.1",
-    "ts-node": "^9.1.1",
-    "typescript": "^4.1.3"
-  }
+    "js-yaml": "^3.14.1"
+  },
+  "packageManager": "yarn@4.0.2"
 }
